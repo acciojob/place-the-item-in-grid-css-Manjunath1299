@@ -1,2 +1,18 @@
 
 /* Your CSS Code here. */
+/* Apply necessary styles to create a 2x2 grid with a total size of 200px */
+.holder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  grid-template-rows: repeat(2, 1fr); /* Two equal rows */
+  gap: 0; /* No gap between grid items */
+  width: 200px; /* Total size of the grid container */
+  height: 200px;
+}
+
+/* Optional: Styles for individual items */
+.item {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+}
